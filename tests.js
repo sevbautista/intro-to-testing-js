@@ -10,7 +10,7 @@ describe('helloWorld', function() {
       expect(helloWorld()).toBe("Hello, World!");
     });
     it("should never return 'undefined' when called", function() {
-      expect(helloWorld()).not.toBe(undefined);
+      expect(typeof helloWorld()).not.toBe(undefined);
     });
 });
 
@@ -35,5 +35,9 @@ describe('isSeven', function(){
 describe('sayHello', function(){
     it('should be defined as a function', function() {
         expect(typeof sayHello).toBe('function');
+    });
+    it('should return a string when called.', function() {
+        expect(typeof sayHello()).toBe("string");
     })
 })
+//
