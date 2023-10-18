@@ -12,7 +12,7 @@ function isSeven(input) {
     }
 
 function sayHello() {
-    return ""
+    return "Hello, Jane!"
 
 }
 
